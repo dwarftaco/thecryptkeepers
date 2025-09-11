@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order of the Cryptkeepers</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            <img class="header-image" src="church.jpg" alt="Picture of a church. Image Credit: Kapimun">
+            <header>
+                <h1 class="order-name">Order of the Cryptkeepers</h1>
+                <img class="flag" src="flag.png" alt="Picture of our banner flag">
+                <p class="latin-motto">"Honoring the Departed, Preserving the Living"</p>
+            </header>
+
+            <div class="section">
+                <h2 class="section-title">Why We Exist</h2>
+                <p class="section-content">
+                    The Order of the Cryptkeepers stands as guardians of memory and servants of the Goddess of Death's eternal cycle. We exist to create sacred spaces of reverence for the departed, to preserve the history of our people through names and epitaphs, and to strengthen our community through the bonds of remembrance.
+                </p>
+                <p class="section-content">
+                    In Imperia's great events, we are the keepers of dignity, ensuring that no soul passes into the beyond without honor, and no name is lost to the passage of time.
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h2 class="section-title">Our Sacred Vision</h2>
+                <div class="image-gallery">
+                    <div class="landscape-image">
+                        <img class="landscape-image" src="church.jpg" alt="Reference picture of a church">
+                        <div class="image-credit">Reference Image by Kapimun</div>
+                    </div>
+                    <div class="landscape-image">
+                        <img src="crypt.jpg" alt="Reference picture of a crypt">
+                        <div class="image-credit">Reference Image by Shawn Kassian</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <h2 class="section-title">Our Sacred Goals</h2>
+                <p class="section-content">
+                    Through devotion to the Goddess of Death and reverence for her eternal cycle, we undertake two sacred missions that will define our legacy in Imperia.
+                </p>
+                <ul class="principles">
+                    <li>
+                        <div class="principle-title">Build a Graveyard & Crypt</div>
+                        We shall construct a modest graveyard with a central church and mausoleum, complete with underground crypts. This sacred ground will provide space for citizens to honor the dead through funerals, rites, and processions, all rooted in reverence for the Goddess of Death and the natural cycle of life.
+                    </li>
+                    <li>
+                        <div class="principle-title">Keep a Ledger of the Dead</div>
+                        In our church, we will maintain a sacred record of every citizen who passes away including their name, date, cause of death, and a meaningful epitaph crafted by reaching out to those who knew them. This living archive honors memory and history, creating a digital ledger that ensures no life is forgotten.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-content">
+                    These sacred principles guide every action we take and every stone we lay. They are the foundation upon which our Order stands, and the light that guides us in service to the Goddess of Death.
+                </p>
+                <ul class="principles">
+                    <li>
+                        <div class="principle-title">Reverence</div>
+                        We honor the dead and the Goddess who guides them through the eternal cycle, treating each soul with the dignity they deserve.
+                    </li>
+                    <li>
+                        <div class="principle-title">Memory</div>
+                        No life is forgotten, each name is preserved. Through our ledgers and epitaphs, we ensure that every citizen's story endures.
+                    </li>
+                    <li>
+                        <div class="principle-title">Community</div>
+                        Rites and remembrance bring the living together, strengthening the bonds that unite us in both grief and celebration of life.
+                    </li>
+                    <li>
+                        <div class="principle-title">Dignity</div>
+                        Every funeral, epitaph, and procession is treated with the utmost respect, for in death we are all equal before the Goddess.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="call-to-action">
+                <h2 class="section-title">Join the Order</h2>
+                <p class="section-content" style="text-align: center; margin-bottom: 30px;">
+                    Help us build a sanctuary of memory and rest. Become a custodian of remembrance and shape how Imperia honors its dead. Together, we shall ensure that in memory, none are truly lost.
+                </p>
+
+                <a href="#" class="join-button" onclick="openSignupForm()">Join Our Order</a>
+                <a href="#" class="join-button" onclick="openMoreInfo()">Learn More</a>
+            </div>
+
+            <div class="contact">
+                <h3 class="contact-title">Contact</h3>
+                <div class="contact-info">
+                    <img class="skin" src="gryphon.png" alt="Picture of S_Gryphon's minecraft skin">
+                    <strong>S_Gryphon</strong>
+                    <p>High Chaplain</p>
+                    <p>@dwarftaco</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div style="text-align: center; color: #555; font-style: italic; font-size: 0.9rem;">
+                "For in memory, none are truly lost"
+            </div>
+        </div>
+
+        <script>
+        function openSignupForm() {
+            const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSeuHqIRJbBUIBwnZ-HnFc6J-f1aTM5-L9BQGtup0XsX264QuA/viewform?usp=dialog";
+            window.open(formUrl, '_blank');
+        }
+
+        function openMoreInfo() {
+            const slideUrl = "https://docs.google.com/presentation/d/e/2PACX-1vQD402dN3q3vC2BjRRwK_Ngrtm7uDCrEFagDxD7KcrPuH1GHFRDhE97i55GE42y_4YKSEPK1WUcaQ0h/pub?start=false&loop=false&delayms=3000";
+            window.open(slideUrl, '_blank');
+        }
+
+        // Subtle fade-in animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                setTimeout(() => {
+                    section.style.transition = 'opacity 1s ease';
+                    section.style.opacity = '1';
+                }, index * 300);
+            });
+        });
+    </script>
+</html>
